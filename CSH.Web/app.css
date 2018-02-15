@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic");
 
@@ -1770,7 +1770,7 @@ body, input, select, textarea {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 16pt;
     font-weight: 300;
-    line-height: 1.75;
+    line-height: 1.65;
 }
 
 @media screen and (max-width: 1680px) {
@@ -3245,15 +3245,15 @@ table {
 
 
 #header {
-    background: white;
+    background: rgb(221, 221, 221);
     color: rgba(2, 171, 242,1);
     cursor: default;
-    height: 4.25em;
+    height: 60px;
     right: 0;
     line-height: 4.25em;
     position: fixed;
     text-align: right;
-    bottom: 0;
+    top: 1em;
     width: 100%;
     z-index: 10001;
 }
@@ -3261,13 +3261,14 @@ table {
     #header .logo {
         display: inline-block;
         height: inherit;
-        right: 1.25em;
+        right: 3.75em;
         line-height: inherit;
         margin: 0;
-        padding: 0;
+        padding: 0 25px;
         position: absolute;
         bottom: 0;
-        color: #fff;
+        top: 0;
+        background-color: #fff;
         font-size: 1.25em;
         text-decoration: none;
     }
@@ -3731,7 +3732,7 @@ body.is-loading #banner > .inner {
 
 @media screen and (max-width: 736px) {
 
-    
+
 
         #banner h1 {
             font-size: 2em;
@@ -4688,7 +4689,7 @@ body.is-ie .post {
 
 #footer {
     padding: 4em 0 2em 0;
-    background: #330000;
+    background: rgb(4,171,242);
     text-align: center;
 }
 
@@ -4714,59 +4715,154 @@ body.is-ie .post {
     }
 }
 
-/* YouTube Lightbox Styling */
-/* Parent element can be any width and height */
-.parent {
-    position: fixed;
-    width: 100%; /* can be any width */
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: none;
-    text-align: center;
-}
 
-    .parent:before { /* pseudo element to force vertical centering of child element */
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
+/* ----- begin Hu0p ------ */
+
+    .two-FA-1,.two-FA-2 {
+        text-align: left;
+        padding: 0 65px;
     }
 
-    .parent:after { /* pseudo element to create overlay */
-        background: black;
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0.5;
-        z-index: 10;
+    #banner {
+        margin-top: 150px;
     }
 
-/* Centered child element can be any width and height */
-.centeredchild {
-    position: relative; /* position element to participate in z-indexing */
-    z-index: 20; /* higher z-index than overlay */
-    display: inline-block;
-    vertical-align: middle;
-    width: 80%; /* can be any width */
-}
+    img[src="images/mark.png"] {
+        max-width: 45vw;
+        height: auto;
+    }
 
-/* Video container to maintain Youtube 16:9 aspect ratio */
-.videowrapper {
-    position: relative;
-    padding-top: 25px;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-}
+    h1.banner-headline {
+        text-align: left;
+        font-size: 5vw !important;
+        color: #000 !important;
+    }
+    .beyond-DoD {
+        display: block;
+    }
 
-    /* Make Youtube IFRAME responsive */
-    .videowrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    #lead-in {
+        font-weight: bold !important;
+    }
+
+    article.two-FA {
+        margin-bottom: 150px;
+        margin-top: 100px;
+    }
+
+    .two-FA-1 {
+        margin-bottom: 65px;
+    }
+
+    section.secure {
+        margin: 150px 0;
+        padding: 0 55px;
+        display: flex;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 981px) {
+           section.secure {
+               margin: 75px 0;
+               padding: 0 25px;
+           }
+           #banner {
+             padding: 0 25px;
+         }
+           section.legal-private>.wrapper {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+           }
+           .legal-field,
+           .private-banking {
+               width: 100% !important;
+           }
+           .two-FA-1,
+           .two-FA-2 {
+               text-align: left;
+               padding: 0 25px;
+           }
+           section.deployment-model {
+               flex-flow: column;
+               justify-content: center;
+               align-items: center;
+            }
+            .deployment-text {
+                margin-top: 25px;
+            }
+            h1.banner-headline {
+                text-align: left;
+                font-size: 6vw !important;
+                color: #000 !important;
+            }
+            article.two-FA {
+                margin-top: 50px;
+            }
+            img[src="images/DeploymentModel.jpg"] {
+                max-width: 100% !important;
+                height: auto;
+            }
+    }
+     @media only screen and (min-width: 981px) {
+         .deployment-text {
+             padding-left: 25px;
+         }
+     }
+     @media only screen and (min-width: 1444px) {
+         section.secure {
+             margin: 75px 0;
+             padding: 0 200px;
+         }
+         .two-FA-1,
+         .two-FA-2 {
+             text-align: left;
+             padding: 0 200px;
+         }
+         #banner {
+             padding: 0 200px;
+         }
+         article.two-FA {
+             margin-top: 150px;
+         }
+     }
+
+    section.CSH-quantum-leap {
+        flex-flow: column;
+    }
+    section.multi-factor {
+        flex-direction: column;
+    }
+    .quote {
+        margin-left: 35%;
+        color: rgb(52, 136, 192);
+        font-family: serif;
+        font-weight: bold;
+    }
+
+    .attr-title {
+        display: block;
+        margin-top: 25px;
+        font-style: italic;
+    }
+
+    section.legal-private>.wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .legal-private>div>h3 {
+        color: #000;
+        margin-bottom: 35px;
+    }
+
+    .legal-field, .private-banking {
+        width: 45%;
+    }
+
+
+    img[src="images/DeploymentModel.jpg"] {
+        max-width: 55vw;
+        height: auto;
     }
