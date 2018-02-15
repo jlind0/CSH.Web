@@ -3352,29 +3352,6 @@ table {
         }
 }
 
-@media screen and (max-width: 980px) {
-
-    body {
-        padding-top: 44px;
-    }
-
-    #header {
-        height: 44px;
-        line-height: 44px;
-    }
-
-        #header .logo {
-            left: 1em;
-            font-size: 1em;
-        }
-}
-
-@media screen and (max-width: 480px) {
-
-    #header {
-        min-width: 320px;
-    }
-}
 
 /* Menu */
 
@@ -3754,9 +3731,7 @@ body.is-loading #banner > .inner {
 
 @media screen and (max-width: 736px) {
 
-    #banner {
-        padding: 5em 1.5em 4em 1.5em;
-    }
+    
 
         #banner h1 {
             font-size: 2em;
