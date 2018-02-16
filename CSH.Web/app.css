@@ -3245,7 +3245,7 @@ table {
 
 
 #header {
-    background: #fff;
+    background: transparent;
     color: rgba(2, 171, 242,1);
     cursor: default;
     height: 60px;
@@ -3264,11 +3264,11 @@ table {
         right: 3.75em;
         line-height: inherit;
         margin: 0;
-        padding: 0 25px;
+        padding: 25px;
         position: absolute;
         bottom: 0;
         top: 0;
-        background-color: #fff;
+        background-color: transparent;
         font-size: 1.25em;
         text-decoration: none;
     }
@@ -4871,4 +4871,8 @@ body.is-ie .post {
     img[src="images/DeploymentModel.jpg"] {
         max-width: 55vw;
         height: auto;
+    }
+
+    .stand-out {
+        margin-top: 100px;
     }
