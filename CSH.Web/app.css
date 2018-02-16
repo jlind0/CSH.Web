@@ -4814,12 +4814,14 @@ body.is-ie .post {
      }
      @media only screen and (min-width: 1444px) {
          section.secure {
-             margin: 75px 0;
+             margin: 75px auto;
              padding: 0 350px;
          }
-         body { display: flex; flex-flow: column wrap;}
+         body { display: flex; flex-flow: column wrap; max-width: 2560px}
          section.deployment-model {
              padding: 0 150px;
+             margin-left: auto;
+             margin-right: auto;
          }
          .two-FA-1,
          .two-FA-2 {
@@ -4853,6 +4855,10 @@ body.is-ie .post {
         font-style: italic;
     }
 
+    .white-bg {
+        background-color: white;
+    }
+
     section.legal-private>.wrapper {
         display: flex;
         justify-content: space-between;
@@ -4875,10 +4881,14 @@ body.is-ie .post {
 
     .stand-out {
         margin-top: 50px;
-        margin-bottom: -50px;
+        margin-bottom: 50px;
         text-align: center;
 
     }
     .stand-out>h2 {
         color: rgb(52, 136, 192);
+    }
+
+    .body-container {
+        background-color: rgba(135, 206, 250, 0.089);
     }
