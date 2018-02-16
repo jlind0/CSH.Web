@@ -4874,5 +4874,11 @@ body.is-ie .post {
     }
 
     .stand-out {
-        margin-top: 100px;
+        margin-top: 50px;
+        margin-bottom: -50px;
+        text-align: center;
+
+    }
+    .stand-out>h2 {
+        color: rgb(52, 136, 192);
     }
