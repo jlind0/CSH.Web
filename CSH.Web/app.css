@@ -3245,7 +3245,7 @@ table {
 
 
 #header {
-    background: rgb(221, 221, 221);
+    background: #fff;
     color: rgba(2, 171, 242,1);
     cursor: default;
     height: 60px;
@@ -3253,7 +3253,7 @@ table {
     line-height: 4.25em;
     position: fixed;
     text-align: right;
-    top: 1em;
+    top: 0;
     width: 100%;
     z-index: 10001;
 }
@@ -4736,9 +4736,11 @@ body.is-ie .post {
         text-align: left;
         font-size: 5vw !important;
         color: #000 !important;
+        white-space: nowrap;
     }
     .beyond-DoD {
         display: block;
+        white-space: nowrap;
     }
 
     #lead-in {
@@ -4813,15 +4815,19 @@ body.is-ie .post {
      @media only screen and (min-width: 1444px) {
          section.secure {
              margin: 75px 0;
-             padding: 0 200px;
+             padding: 0 350px;
+         }
+         body { display: flex; flex-flow: column wrap;}
+         section.deployment-model {
+             padding: 0 150px;
          }
          .two-FA-1,
          .two-FA-2 {
              text-align: left;
-             padding: 0 200px;
+             padding: 0 350px;
          }
          #banner {
-             padding: 0 200px;
+             padding: 0 350px;
          }
          article.two-FA {
              margin-top: 150px;
