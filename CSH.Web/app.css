@@ -3247,7 +3247,7 @@ table {
 #header {
     background: transparent;
     color: rgba(2, 171, 242,1);
-    background-color: rgba(255, 223, 2,1);
+    background-color: "#ffcc33";
     cursor: default;
     height: 60px;
     right: 0;
