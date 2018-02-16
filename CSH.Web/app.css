@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic");
 
@@ -3247,27 +3247,28 @@ table {
 #header {
     background: transparent;
     color: rgba(2, 171, 242,1);
+    background-color: rgba(255, 223, 2,1);
     cursor: default;
     height: 60px;
     right: 0;
     line-height: 4.25em;
     position: fixed;
     text-align: right;
-    top: 0;
+     bottom: 0;
     width: 100%;
     z-index: 10001;
 }
 
     #header .logo {
+        
         display: inline-block;
         height: inherit;
         right: 3.75em;
         line-height: inherit;
         margin: 0;
-        padding: 25px;
         position: absolute;
         bottom: 0;
-        top: 0;
+        top:0;
         background-color: transparent;
         font-size: 1.25em;
         text-decoration: none;
@@ -4757,7 +4758,7 @@ body.is-ie .post {
     }
 
     section.secure {
-        margin: 150px 0;
+        margin: 40px 0;
         padding: 0 55px;
         display: flex;
         align-items: center;
@@ -4765,7 +4766,7 @@ body.is-ie .post {
 
     @media only screen and (max-width: 981px) {
            section.secure {
-               margin: 75px 0;
+               margin: 20px 0;
                padding: 0 25px;
            }
            #banner {
@@ -4814,8 +4815,8 @@ body.is-ie .post {
      }
      @media only screen and (min-width: 1444px) {
          section.secure {
-             margin: 75px auto;
-             padding: 0 350px;
+             margin: 20px auto;
+             padding: 0 100px;
          }
          body { display: flex; flex-flow: column wrap; max-width: 2560px}
          section.deployment-model {
